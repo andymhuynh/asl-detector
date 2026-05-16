@@ -56,24 +56,31 @@ while True:
             thumb_middle = dist(lm[4], lm[12])
             index_pinky = dist(lm[8], lm[20])
 
-            # I LOVE YOU = thumb, index, pinky open; middle/ring closed
+            # I LOVE YOU
             if fingers == [1, 1, 0, 0, 1]:
                 sign = "I LOVE YOU"
 
-            # B = four fingers open, thumb folded or side
+            # D = index only
+            elif fingers in ([0, 1, 0, 0, 0], [1, 1, 0, 0, 0]):
+                sign = "D"
+
+            # V = index and middle
+            elif fingers in ([0, 1, 1, 0, 0], [1, 1, 1, 0, 0]):
+                sign = "V"
+
+            # B = four fingers open
             elif index_open and middle_open and ring_open and pinky_open:
                 sign = "B"
 
-            # A = closed fist
+            # A = fist
             elif total <= 1 and thumb_index < 0.18:
                 sign = "A"
 
-            # C = curved hand, thumb and fingers separated
+            # C = curved hand
             elif (
                 thumb_index > 0.16 and
                 thumb_middle > 0.18 and
-                index_pinky > 0.12 and
-                total >= 2
+                index_pinky > 0.12
             ):
                 sign = "C"
 
