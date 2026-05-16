@@ -3,6 +3,7 @@
 Real-time ASL sign detector built with Python, OpenCV, and MediaPipe.
 
 ## Features
+
 - Webcam hand tracking
 - ASL gesture recognition
 - Real-time OpenCV display
@@ -15,27 +16,16 @@ Real-time ASL sign detector built with Python, OpenCV, and MediaPipe.
   - I LOVE YOU
 
 ## Tech Stack
+
 - Python
 - OpenCV
 - MediaPipe
 
-## Run
+## Installation
 
 ```bash
-python3 asl_detector.py
-git add .X
-git commit -m "Initial commit"
-git add .
-git commit -m "Initial commit"
-clear
-# ASL Detector
-
-Real-time ASL sign detector built with Python, OpenCV, and MediaPipe.
-
-## Features
-- Webcam hand tracking
-- ASL gesture recognition
-- Real-time OpenCV display
+pip install opencv-python mediapipe
+```
 
 ## Run
 
@@ -43,3 +33,6 @@ Real-time ASL sign detector built with Python, OpenCV, and MediaPipe.
 python3 asl_detector.py
 ```
 
+## About
+
+Real-time ASL sign detector using OpenCV and MediaPipe.
