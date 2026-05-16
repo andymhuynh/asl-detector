@@ -78,9 +78,11 @@ while True:
 
             # C = curved hand
             elif (
-                thumb_index > 0.16 and
-                thumb_middle > 0.18 and
-                index_pinky > 0.12
+                thumb_index > 0.10 and
+                thumb_index < 0.35 and
+                thumb_middle > 0.10 and
+                index_pinky > 0.08 and
+                total >= 2
             ):
                 sign = "C"
 
